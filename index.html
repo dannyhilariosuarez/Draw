@@ -1,0 +1,37 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head id="Head1" runat="server">
+    <link rel="stylesheet" type="text/css" href="css/dd.css" /> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
+		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/dhs.js"></script>
+	
+</head>
+
+<body onload="initCanvas();">
+    <nav>
+        <div class="container">
+            <h1 id="h2_dd">Canva Draw</h1>
+        </div>
+    </nav>
+    <main id="main" class="container">  
+            <div id="div_canvas">  
+            </div>   
+         
+    </main>
+		<footer>
+		<div id="div_footer">
+			<p target="_blank">
+                        <spand>Made with <span class="heart">♥</span> by </spand>  <a href="http://dannyhilariosuarez.com"  target="_blank" class="link">Danny Hilario Suarez</a>
+                    </p>
+		</div>
+	</footer>
+    <script>
+
+        $(window).resize(respondCanvas);
+		 
+    </script>
+</body>
+</html>
