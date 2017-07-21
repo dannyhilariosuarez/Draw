@@ -60,6 +60,12 @@
     <script>
 
         $(window).resize(respondCanvas);
+        Array.prototype.forEach.call(document.querySelectorAll('.miniColor'), function (e) {
+
+            e.addEventListener("click", function () {
+                CanvaColor = $(this).attr('data-color');
+            });
+        });
 
     </script>
 </body>
