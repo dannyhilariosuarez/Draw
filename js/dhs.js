@@ -74,13 +74,11 @@ function draw() {
         context.beginPath();
 
         if (Movements[i][2]) {
-            context.moveTo(Movements[i - 1][0], Movements[i - 1][1]);
-            context.strokeStyle = Movements[i][3];
+            context.moveTo(Movements[i - 1][0], Movements[i - 1][1]); 
         } else {
-            context.moveTo(Movements[i][0], Movements[i][1]);
-            context.strokeStyle = Movements[i][3];
+            context.moveTo(Movements[i][0], Movements[i][1]); 
         }
-
+        context.strokeStyle = Movements[i][3];
         context.lineTo(Movements[i][0], Movements[i][1]);
         context.closePath();
         context.stroke();
@@ -88,8 +86,8 @@ function draw() {
 }
 
 function respondCanvas() {
-    canvas.setAttribute('width', $('#main').width()); //max width
-    canvas.setAttribute('height', $('#main').height()); //max height 
+    canvas.setAttribute('width', $('#canvas').width()); //max width
+    canvas.setAttribute('height', $('#canvas').height()); //max height 
     draw(); //Call a function to draw()
 }
  
