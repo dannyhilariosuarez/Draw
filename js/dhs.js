@@ -11,9 +11,7 @@ var Pulsed;                  // passing the mouse, and its status (pressed / not
 document.onselectstart = function () {
     return false;
 }
-
-
-
+ 
 function initCanvas() {
     var canvasDiv = document.getElementById('div_canvas');
     canvas = document.createElement('canvas');
@@ -22,15 +20,16 @@ function initCanvas() {
     canvas.setAttribute('id', 'canvas');
     canvasDiv.appendChild(canvas);
      
-    $('#main').css({ cursor: "url('images/pencil.png'), auto" });
+    $('#canva').css({ cursor: "url('images/pencil.png'), auto" });
 
     if (typeof G_vmlCanvasManager != 'undefined') {
         canvas = G_vmlCanvasManager.initElement(canvas);
     }
+
     context = canvas.getContext("2d");
 
     $('#canvas').mousedown(function (e) {
-        Pulsed = true;  
+        Pulsed = true; 
         Movements.push(
             [(e.clientX + 2) - this.offsetLeft,
             (e.clientY + 20) - this.offsetTop,
@@ -45,10 +44,14 @@ function initCanvas() {
                 (e.clientY + 20) - this.offsetTop,
                 true]);
             draw();
-        }
+        } 
     });
 
     $('#canvas').mouseup(function (e) {
+        Pulsed = false; 
+    });
+
+    $('body').mouseup(function (e) {
         Pulsed = false; 
     });
 
