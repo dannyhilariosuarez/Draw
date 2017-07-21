@@ -3,11 +3,11 @@
 
 
 <head id="Head1" runat="server">
-    <link rel="stylesheet" type="text/css" href="css/dd.css" /> 
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> 
-		<script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/dd.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/dhs.js"></script>
-	
+
 </head>
 
 <body onload="initCanvas();">
@@ -16,22 +16,51 @@
             <h1 id="h2_dd">Canva Draw</h1>
         </div>
     </nav>
-    <main id="main" class="container">  
-            <div id="div_canvas">  
-            </div>   
+    <main>
          
+        <div class="grid">
+            <div id="div_colorBox">
+                <div id="div_colorHeader"><h4>Colors</h4></div>
+                <div>
+                    <div style="background-color:#f44336;" data-color="#f44336" class="miniColor"></div>
+                    <div style="background-color:#e91e63;" data-color="#e91e63" class="miniColor"></div>
+                    <div style="background-color:#9c27b0;" data-color="#9c27b0" class="miniColor"></div>
+                    <div style="background-color:#673ab7;" data-color="#673ab7" class="miniColor"></div>
+                    <div style="background-color:#3f51b5;" data-color="#3f51b5" class="miniColor"></div>
+
+                    <div style="background-color:#2196f3;" data-color="#2196f3" class="miniColor"></div>
+                    <div style="background-color:#03a9f4;" data-color="#03a9f4" class="miniColor"></div>
+                    <div style="background-color:#00bcd4;" data-color="#00bcd4" class="miniColor"></div>
+                    <div style="background-color:#009688;" data-color="#009688" class="miniColor"></div>
+                    <div style="background-color:#4caf50;" data-color="#4caf50" class="miniColor"></div>
+
+                    <div style="background-color:#cddc39;" data-color="#cddc39" class="miniColor"></div>
+                    <div style="background-color:#ffc107;" data-color="#ffc107" class="miniColor"></div>
+                    <div style="background-color:#ff9800;" data-color="#ff9800" class="miniColor"></div>
+                    <div style="background-color:#ff5722;" data-color="#ff5722" class="miniColor"></div>
+                    <div style="background-color:#795548;" data-color="#795548" class="miniColor"></div>
+
+                    <div style="background-color:#9e9e9e;" data-color="#9e9e9e" class="miniColor"></div>
+                    <div style="background-color:#607d8b;" data-color="#607d8b" class="miniColor"></div>
+                </div>
+            </div>
+            <div id="canva">
+                <div id="div_canvas">
+                </div>
+            </div>
+        </div>
     </main>
-		<footer>
-		<div id="div_footer">
-			<p target="_blank">
-                        <spand>Made with <span class="heart">♥</span> by </spand>  <a href="http://dannyhilariosuarez.com"  target="_blank" class="link">Danny Hilario Suarez</a>
-                    </p>
-		</div>
-	</footer>
+    <footer>
+        <div id="div_footer">
+            <p target="_blank">
+                <spand class="made">Made with <span class="heart">♥</span> by </spand>  <a href="http://dannyhilariosuarez.com" target="_blank" class="link">Danny Hilario Suarez</a>
+            </p>
+        </div>
+    </footer>
     <script>
 
         $(window).resize(respondCanvas);
-		 
+
     </script>
 </body>
 </html>
