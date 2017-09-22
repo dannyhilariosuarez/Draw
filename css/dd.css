@@ -131,6 +131,9 @@ ul li {
 .footer-font {
   font-size: 0.9rem; }
 
+.love {
+  color: red; }
+
 .github-corner {
   display: none; }
   .github-corner:hover .octo-arm {
