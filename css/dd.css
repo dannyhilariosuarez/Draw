@@ -129,7 +129,8 @@ ul li {
   font-family: monospace; }
 
 .footer-font {
-  font-size: 0.9rem; }
+  font-size: 0.9rem; 
+    font-weight: 600;}
 
 .love {
   color: red; }
