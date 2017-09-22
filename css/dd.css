@@ -134,6 +134,10 @@ ul li {
 .love {
   color: red; }
 
+.link{
+     color: red;
+}
+
 .github-corner {
   display: none; }
   .github-corner:hover .octo-arm {
