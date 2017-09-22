@@ -46,6 +46,7 @@ a{
 }
 
 body {
+    margin: 0px;
     border-top: 5px solid #9C27B0;
     background-color: #eee;
     background-repeat: no-repeat;
