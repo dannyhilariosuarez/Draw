@@ -9,6 +9,10 @@
     border-radius: 3px;
 }
 
+a{
+  text-decoration: none;
+}
+
 #h2_dd {
     color: #9C27B0;
 }
@@ -42,6 +46,7 @@
 }
 
 body {
+    border-top: 5px solid #9C27B0;
     background-color: #eee;
     background-repeat: no-repeat;
     background-size: cover;
